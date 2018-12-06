@@ -1,132 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Eternale</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <script src="/js/header.js"></script>
 </head>
+
 <body>
-    <nav class="menu-bar">
-        <ul class="menu">
-            <li class="menu-item"><a class="menu-item__link" href="#">
-               home
-            </a></li>
-            <li class="menu-item"><a class="menu-item__link" href="#">rooms</a>
-                <div class="menu-dropdown">
-                    <div class="menu-dropdown-card">
-                            <div class="menu-dropdown-img">
+    <div class="wrapper">
+        <header>
+            <nav class="menu-bar">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <div class="home">
+                            <a class="home-logo-link" href="#"><img src="img/header/logo.png" alt=""></a>
+                            <div class="home-explore">
+                                <div class="home-explore-close"><i id="btn-home-explore-close" class="fas fa-times"></i></div>
+                                <div class="home-explore-title"><span>explore</span></div>
+                                <div class="home-explore-lists">
+                                    <a href="#">About us</a>
+                                    <a href="#">Policies</a>
+                                    <a href="#">Testimonial</a>
+                                    <a href="#">Location</a>
+                                    <a href="#">Suggesttions</a>
+                                    <a href="#">Tours in Hanoi</a>
+                                    <a href="#">Job Opportunities</a>
+                                    <a href="#">eng</a>
+                                </div>
+                            </div>
+                            <span class="home-sildebar-btn"><i class="fas fa-angle-down"></i><span>
+                        </div>
+                    </li>
+                    <li class="menu-item"><a class="menu-item__link" href="#">home</a></li>
+                    <li class="menu-item"><a class="menu-item__link" href="#">rooms & suttes</a>
+                        <div class="menu-dropdown">
+                            <div class="menu-dropdown-card">
+                                <div class="menu-dropdown-img">
                                     <img src="/img/header/room1.png" alt="room1">
                                 </div>
                                 <div class="menu-dropdown__link">
                                     <a href="#">rooms</a>
                                 </div>
-                    </div>
-                    <div class="menu-dropdown-card">
-                            <div class="menu-dropdown-img">
+                            </div>
+                            <div class="menu-dropdown-card">
+                                <div class="menu-dropdown-img">
                                     <img src="/img/header/room2.png" alt="room1">
                                 </div>
                                 <div class="menu-dropdown__link">
-                                    <a href="#">suite</a>
+                                    <a href="#">suites</a>
                                 </div>
-                    </div>
-                    <div class="menu-dropdown-card">
-                            <div class="menu-dropdown-img">
+                            </div>
+                            <div class="menu-dropdown-card">
+                                <div class="menu-dropdown-img">
                                     <img src="/img/header/room3.png" alt="room1">
                                 </div>
                                 <div class="menu-dropdown__link">
-                                    <a href="#">penhouse</a>
+                                    <a href="#">apartments</a>
                                 </div>
+                            </div>
+                    </li>
+                    <li class="menu-item"><a class="menu-item__link" href="#">dining & pug</a></li>
+                    <li class="menu-item"><a class="menu-item__link" href="#">services</a></li>
+                    <li class="menu-item"><a class="menu-item__link" href="#">events</a> </li>
+                    <li class="menu-item"><a class="menu-item__link" href="#">contact</a> </li>
+                    <li class="menu-item"><a class="menu-item__link" href="#">book your stay</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+            <div class="mark-bg"><img src="/img/home/bg1.jpg" alt=""></div>
+            <article class="main">
+                    <section class="main-header">
+                            <div class="main-header__title">
+                                <h2>a trip to eternality</h2>
+                            </div>
+                            <div class="main-header__address">
+                                <h3>Italtian space inside hanoi</h3>
+                            </div>
+                        </section>
+                        <section class="main-content">
+                            <p>Welcome to a 5-star Italian style hotel in Hanoi. We are pleased to offer you the best experience
+                                exploring this historic city, with luxurious services. We hope you had a wonderful time enjoying
+                                new cultures, foods, history and explorations yet still feel comfortable as at home.</p>
+                        </section>
+                        <footer class="main-footer">
+                            <a id="btn-open-explore"  href="#">Explore</a>
+                        </footer>
                     </div>
-                </div>
-            </li>
-            <li class="menu-item"><a class="menu-item__link" href="#">dining & pug</a>
-                <div class="menu-dropdown">
-                    <div class="menu-dropdown-card">
-                            <div class="menu-dropdown-img">
-                                    <img src="/img/header/restaurant1.png" alt="room1">
-                                </div>
-                                <div class="menu-dropdown__link">
-                                    <a href="#">restaurant</a>
-                                </div>
-                    </div>
-                    <div class="menu-dropdown-card">
-                            <div class="menu-dropdown-img">
-                                    <img src="/img/header/restaurant2.png" alt="room1">
-                                </div>
-                                <div class="menu-dropdown__link">
-                                    <a href="#">the bar room</a>
-                                </div>
-                    </div>
-                    <div class="menu-dropdown-card">
-                            <div class="menu-dropdown-img">
-                                    <img src="/img/header/restaurant3.png" alt="room1">
-                                </div>
-                                <div class="menu-dropdown__link">
-                                    <a href="#">the bar room</a>
-                                </div>
-                    </div>
-                </div>
-            </li>
-            <li class="menu-item"><a class="menu-item__link" href="#">events</a>
-                <div class="menu-dropdown">
-                    <div class="menu-dropdown-card">
-                            <div class="menu-dropdown-img">
-                                    <img src="/img/header/event1.png" alt="room1">
-                                </div>
-                                <div class="menu-dropdown__link">
-                                    <a href="#">menu & offerings</a>
-                                </div>
-                    </div>
-                    <div class="menu-dropdown-card">
-                            <div class="menu-dropdown-img">
-                                    <img src="/img/header/event2.png" alt="room1">
-                                </div>
-                                <div class="menu-dropdown__link">
-                                    <a href="#">event spaces</a>
-                                </div>
-                    </div>
-                    <div class="menu-dropdown-card">
-                            <div class="menu-dropdown-img">
-                                    <img src="/img/header/event3.png" alt="room1">
-                                </div>
-                                <div class="menu-dropdown__link">
-                                    <a href="#">weddings</a>
-                                </div>
-                    </div>
-                </div>
-            </li>
-            <li class="menu-item"><a class="menu-item__link" href="#">services</a>
-                <div class="menu-dropdown">
-                    <div class="menu-dropdown-card">
-                            <div class="menu-dropdown-img">
-                                    <img src="/img/header/event1.png" alt="room1">
-                                </div>
-                                <div class="menu-dropdown__link">
-                                    <a href="#">menu & offerings</a>
-                                </div>
-                    </div>
-                    <div class="menu-dropdown-card">
-                            <div class="menu-dropdown-img">
-                                    <img src="/img/header/event2.png" alt="room1">
-                                </div>
-                                <div class="menu-dropdown__link">
-                                    <a href="#">event spaces</a>
-                                </div>
-                    </div>
-                    <div class="menu-dropdown-card">
-                            <div class="menu-dropdown-img">
-                                    <img src="/img/header/event3.png" alt="room1">
-                                </div>
-                                <div class="menu-dropdown__link">
-                                    <a href="#">weddings</a>
-                                </div>
-                    </div>
-                </div>
-            </li>
-            <li class="menu-item"><button class="menu-item__link menu-item__button"><span>book your stay</span></button></li>
-        </ul>
-    </nav>
+        </article>
+
+
+        <div class="pagination">
+            <span class="prev"><i class="fas fa-angle-left"></i></span>
+            <span>1/6</span>
+            <span class="next"><i class="fas fa-angle-right"></i></span>
+        </div>
+    </div>
+
 </body>
+
 </html>

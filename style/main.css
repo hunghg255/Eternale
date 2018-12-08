@@ -1,0 +1,72 @@
+@import "main-slide1.css";
+@import "main-slide2.css";
+@import "main-slide3.css";
+@import "main-slide4.css";
+@import "main-slide5.css";
+@import "main-slide6.css";
+
+/*----------------------------- MAIN--------------------------------- */
+main,
+.slide-content {
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+main{
+  position: relative;
+}
+
+.slide1, .slide2, .slide4, .slide6 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+}
+.slide1::before, .slide2::before, .slide4::before, .slide6::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    z-index: -1;
+}
+.slide1 {
+  background-image: url("../img/home/bg1.jpg");
+}
+.slide2 {
+  background-image: url("../img/home/bg2.png");
+  height: 100vh;
+}
+
+.slide4 {
+    background-image: url("../img/home/bg1.jpg");
+  }
+  
+  .slide6 {
+    background-image: url("../img/home/bg6.png");
+  }
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+.pagination {
+    position: fixed;
+    z-index: 1000;
+    right: 10px;
+    bottom: 10px;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.pagination .arrow {
+    margin: 0 5px;
+    cursor: pointer;
+}

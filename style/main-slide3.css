@@ -1,0 +1,75 @@
+/*-------------------------------- SLIDE3 ------------------------------------*/
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.main__left {
+    width: 60%;
+    display: flex;
+    background: url("../img/slide3/Hotel-Chaco-Amenities-HERO.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+.main__right {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.main__right--top {
+    width: 100%;
+    display: flex;
+    background: url("../img/slide3/Gym\ 2017.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+}
+.main__right--bottom {
+    width: 100%;
+    display: flex;
+
+}
+
+.main__right--bottom--left {
+    width: 50%;
+    background: url("../img/slide3/jd-mason-757201-unsplash.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__right--bottom--right {
+    background: url("../img/slide3/toa-heftiba-578093-unsplash.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__part {
+    position: relative;
+}
+.main__part::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(32,29,26,0.8);
+    transition: all .3s ease;
+}
+
+.main__part:hover::before {
+    opacity: .3;
+}

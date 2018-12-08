@@ -1,9 +1,20 @@
 @import "home.css";
 
+
+@font-face {
+    font-family: baskerville-old-face;
+    src: url(../Font/BASKVILL.ttf);
+  }
+
+@font-face {
+    font-family: light;
+    src: url(../Font/Freight\ Big\ Pro\ Light.otf);
+}
+
 *, body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: baskerville-old-face;
 }
 
 .wrapper {

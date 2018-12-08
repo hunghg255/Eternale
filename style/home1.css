@@ -1,9 +1,9 @@
-/* -----------------------------------SLIDE 1------------------------------- */
+/* ----------------------------------HOME 1------------------------------- */
 .slide-content-main {
     width: 50%;
     margin: 0 auto;
     background: #2222228e;
-    padding-bottom: 3rem;
+    padding: 3rem 0;
 }
 
 .slide-content-main section, footer {
@@ -40,7 +40,7 @@
     
 }
 .main-content p {
-    font-size: 15px;
+    font-size: 1.3rem;
     color: white;
     line-height: 1.5rem;
     font-family: light;
@@ -49,11 +49,13 @@
 .main-footer a {
     text-decoration: none;
     text-transform: uppercase;
-    padding: 1rem 2rem;
+    padding: .8rem 2rem;
     color: #BAA256;
     font-size: 17px;
     border: 1px solid #BAA256;
     position: relative;
+    z-index: 6;
+    transition: 400ms;
 }
 
 .main-footer a::before {

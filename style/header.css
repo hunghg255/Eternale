@@ -1,9 +1,11 @@
 /*---------------------- MENU--------------------------- */
-nav {
-    position: fixed;
+header {
+    position: sticky;
     top: 0;
+    z-index: 10000;
+}
+nav {
     width: 100%;
-    z-index: 1000;
 }
 
 .menu {
@@ -30,7 +32,7 @@ nav {
 .menu-item:nth-child(2), .menu-item:nth-child(3), .menu-item:nth-child(4), .menu-item:nth-child(5), .menu-item:nth-child(6), .menu-item:nth-child(7) {
     flex: 1 1 0;
 }
-.menu-item:nth-child(2)::before, .menu-item:nth-child(3)::before, .menu-item:nth-child(4)::before, .menu-item:nth-child(5)::before, .menu-item:nth-child(6)::before, .menu-item:nth-child(7)::before {
+.menu-item:nth-child(3)::before, .menu-item:nth-child(4)::before, .menu-item:nth-child(5)::before, .menu-item:nth-child(6)::before, .menu-item:nth-child(7)::before {
     content: '';
     position: absolute;
     left: 50%;
@@ -38,12 +40,22 @@ nav {
     transform: translateX(-50%);
     min-height: 0px;
     transition: 300ms;
+    background: white;
+    bottom: 0;
+}
+.menu-item:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 60%;
+    transform: translateX(-50%);
+    min-height: 4px;
+    transition: 300ms;
     background: #BAA256;
     bottom: 0;
 }
-
-.menu-item:nth-child(2):hover::before, .menu-item:nth-child(3):hover::before, .menu-item:nth-child(4):hover::before, .menu-item:nth-child(5):hover::before, .menu-item:nth-child(6):hover::before, .menu-item:nth-child(7):hover::before {
-    min-height: 2px;
+.menu-item:nth-child(3):hover::before, .menu-item:nth-child(4):hover::before, .menu-item:nth-child(5):hover::before, .menu-item:nth-child(6):hover::before, .menu-item:nth-child(7):hover::before {
+    min-height: 4px;
 }
 
 .menu-bar {
@@ -56,29 +68,6 @@ nav {
     position: relative;
 }
 
-.home {
-    width: 95%;
-    min-height: 150%;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 50% 100%, 0 70%);
-    -moz-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 50% 100%, 0 70%);
-    -o-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 50% 100%, 0 70%);
-    -ms-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 50% 100%, 0 70%);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 50% 100%, 0 70%);
-    background: #363636;
-    padding-top: 12px;
-}
-
-.home-sildebar-btn {
-    color: white; 
-    font-size: 1.2rem;
-    cursor: pointer;
-    padding-top: 30px;
-
-}
-
 .menu-item__link {
     text-decoration: none;
     text-transform: uppercase;
@@ -89,7 +78,9 @@ nav {
     justify-content: center;
     align-items: center;
 }
-
+.menu-item:nth-child(2) .menu-item__link{
+    color: #BAA256 !important;
+}
 .menu-item:nth-child(8) .menu-item__link{
     background: #BAA256;
     color: black;
@@ -104,13 +95,13 @@ nav {
     border: 2px solid black;
 }
 .menu-item__link:hover {
-    color: #BAA256;
+    color: white;
 }
 
 .menu-dropdown {
     display: flex;
     height: 94px;
-    width: 400%;
+    width: 550%;
     position: absolute;
     top: 100%;
     opacity: 0;
@@ -118,7 +109,12 @@ nav {
     transition: 300ms;
     transform: translateY(-100%);
 }
-
+.menu-item:nth-child(3) .menu-dropdown {
+    left: -88%;
+}
+.menu-item:nth-child(5) .menu-dropdown {
+    left: -285%;
+}
 .menu-dropdown-card {
     position: relative;
     cursor: pointer;
@@ -154,7 +150,7 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #BAA256;
-    font-size: 14px;
+    font-size: 1rem;
 }
 .menu-dropdown__link a::before {
     content: '';
@@ -190,7 +186,34 @@ nav {
     transform: translateY(0);
 }
 
+.menu-item:nth-child(5):hover > .menu-dropdown {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* --------------------LOGO----------------- */
+.home {
+    width: 95%;
+    min-height: 150%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 50% 100%, 0 70%);
+    -moz-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 50% 100%, 0 70%);
+    -o-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 50% 100%, 0 70%);
+    -ms-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 50% 100%, 0 70%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 50% 100%, 0 70%);
+    background: #363636;
+    padding-top: 12px;
+}
+
+
+.home-sildebar-btn {
+    color: white; 
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding-top: 30px;
+}
 .home-explore {
     display: none;
     width: 100%;
@@ -216,7 +239,7 @@ nav {
     margin-top: 1rem;
 }
 .home-explore-title {
-    margin: 1rem 0 1.6rem;
+    margin: 1rem 0 2.2rem;
 }
 .home-explore-title span {
     text-transform: uppercase;
@@ -225,11 +248,14 @@ nav {
 
 .home-explore-lists a {
     display: block;
+    font-size: 1.2rem;
     text-decoration: none;
     color: #535353;
     margin: 15px 0;
 }
-
+.home-explore-lists a:hover {
+    text-decoration: underline;
+}
 .home-explore-lists a:nth-child(8) {
     text-decoration: underline;
     text-transform: uppercase;

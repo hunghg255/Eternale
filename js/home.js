@@ -4,15 +4,19 @@ document.addEventListener("DOMContentLoaded", function () {
     let home = document.querySelector('.home');
     let closeHomeExplore = document.querySelector('#btn-home-explore-close');
     let openExplore = document.querySelector('#btn-open-explore');
+    let contentHome2 = document.querySelector('.slide-content-main2');
+
 
     btnHomeExplore.addEventListener('click', function () {
         homeExplore.classList.toggle('active');
         home.classList.toggle('active');
+        contentHome2.classList.toggle('active');
     });
 
     closeHomeExplore.addEventListener('click', function () {
         homeExplore.classList.toggle('active');
         home.classList.toggle('active');
+        contentHome2.classList.toggle('active');
     });
 
     openExplore.addEventListener('click', function () {

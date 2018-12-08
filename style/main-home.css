@@ -1,20 +1,21 @@
-@import "main-slide1.css";
-@import "main-slide2.css";
-@import "main-slide3.css";
-@import "main-slide4.css";
-@import "main-slide5.css";
-@import "main-slide6.css";
+@import "home1.css";
+@import "home2.css";
+@import "home3.css";
+@import "home4.css";
+@import "home5.css";
+@import "home6.css";
+@import "home7.css";
 
 /*----------------------------- MAIN--------------------------------- */
-main,
-.slide-content {
+main {
   width: 100%;
-  height: 100vh;
-  overflow-y: hidden;
+  height: 100%;
 }
 
-main{
-  position: relative;
+.slide-content {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
 }
 
 .slide1, .slide2, .slide4, .slide6 {
@@ -25,26 +26,34 @@ main{
   z-index: 0;
 }
 .slide1::before, .slide2::before, .slide4::before, .slide6::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.slide1::before{
+  background: rgba(0, 0, 0, .6);
+}
+.slide2::before, .slide4::before, .slide6::before {
     background: rgba(0, 0, 0, .8);
-    z-index: -1;
 }
 .slide1 {
   background-image: url("../img/home/bg1.jpg");
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 .slide2 {
   background-image: url("../img/home/bg2.png");
   height: 100vh;
 }
 
-.slide4 {
+.slide6 {
     background-image: url("../img/home/bg1.jpg");
   }
   
-  .slide6 {
+  .slide7 {
     background-image: url("../img/home/bg6.png");
   }
 

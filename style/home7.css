@@ -105,3 +105,8 @@ ul {
     padding: 8px 0;
     width: calc(100% / 7);
 }
+
+form#bookform input {
+    border: none;
+    border-bottom: 2px solid #b9a155;
+}

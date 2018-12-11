@@ -29,13 +29,16 @@
 
 .slide-content-main2 .card:before {
     content: '';
+    margin: 0 auto;
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
+    right: 0;
     background: rgba(37, 37, 37, 0.6);
     z-index: -1;
+    transition: 300ms;
 }
 
 .slide-content-main2 .card1-title h2{
@@ -45,6 +48,29 @@
     font-weight: 400;
     margin-bottom: .6rem;
 }
+
+.card:nth-child(1) h2 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.card:nth-child(1) .card1-title p {
+    font-size: 2rem;
+}
+.card:nth-child(1) .card1-title {
+    position: relative;
+}
+.card:nth-child(1) .card1-title::before {
+    content: '';
+    position: absolute;
+    width: 80% ;
+    height: 2px;
+    background: #BAA256;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .slide-content-main2 .card1-title p {
     color: #BAA256;
     font-size: 1.4rem;
@@ -52,6 +78,7 @@
 }
 .card1-main {
     margin: 0 3rem;
+    margin-bottom: 2.4rem;
 }
 .card1-main p {
     color: white;
@@ -87,7 +114,7 @@
     background: #BAA256;
 }
 .card1-btn a:hover {
-    color: white;
+    color: #363636;;
 }
 .card:before {
     content: '';
@@ -100,9 +127,7 @@
     z-index: -1;
 }
 .card:nth-child(1) {
-    background: url("../img/slide2/card1.png") no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: #363636;
 }
 .card:nth-child(2) {
     background: url("../img/slide2/card2.png") no-repeat;
@@ -124,14 +149,11 @@
 .button__empty {
 	background: transparent;
     display: inline-block;
-    /*margin: 5px;*/
     padding: 11px 40px 12px 40px;
     position: relative;
-    /*border: 1px solid #b9a155;*/
     text-transform: uppercase;
     color: #b9a155;
     transition: all .3s ease;
-    
 }
 
 .button--massage {
@@ -155,7 +177,6 @@
 	display: inline-block;
     width: 110px;
     padding: 5px;
-    /*border: 1px solid #b9a155;*/
     color: #b9a155;
     background: transparent;
     height: 32px;

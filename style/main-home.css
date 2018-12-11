@@ -9,73 +9,97 @@
 /*----------------------------- MAIN--------------------------------- */
 main {
   width: 100%;
-  height: 100%;
+  height: 90vh;
+  overflow: hidden;
 }
 
-.slide-content {
+#slider {
+  position: relative;
+}
+
+.slide {
+  transition: transform 400ms;
+  position: absolute;
+  top: 0;
+  left: 100%;
   width: 100%;
-  height: 100%;
-  overflow-y: hidden;
 }
 
-.slide1, .slide2, .slide4, .slide6 {
+.slide.active {
+  transform: translateX(-100%);
+}
+.slide.hidden {
+  transform: translateX(-200%);
+}
+
+.slide1, .slide2, .slide4{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
+  position: absolute;
   z-index: 0;
 }
-.slide1::before, .slide2::before, .slide4::before, .slide6::before {
+
+.slide1::before, .slide2::before, .slide4::before {
   content: '';
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: -1;
 }
+
 .slide1::before{
   background: rgba(0, 0, 0, .6);
 }
-.slide2::before, .slide4::before, .slide6::before {
+
+.slide2::before, .slide4::before{
     background: rgba(0, 0, 0, .8);
 }
+
 .slide1 {
   background-image: url("../img/home/bg1.jpg");
-  position: fixed;
-  top: 0;
-  left: 0;
 }
+
 .slide2 {
   background-image: url("../img/home/bg2.png");
-  height: 100vh;
 }
 
-.slide6 {
-    background-image: url("../img/home/bg1.jpg");
-  }
-  
-  .slide7 {
-    background-image: url("../img/home/bg6.png");
-  }
+.slide5 {
+  background: #222222;
+}
+
+.slide7 {
+  background: url("../img/slide7/bkgd--section-1--4-607c73a138a09d4f979575f5b988d8057abe613ea4e9f9eb87ead3ea2a920d21.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 .slide-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   width: 100%;
   height: 100vh;
 }
+
+.slide1 .slide-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .pagination {
-    position: fixed;
-    z-index: 1000;
-    right: 10px;
-    bottom: 10px;
-    color: white;
-    font-size: 1.3rem;
+  position: fixed;
+  z-index: 1000;
+  right: 15px;
+  bottom: 15px;
+  color: white;
+  font-size: 1.8rem;
+}
+
+.pagination span:nth-child(2) {
+  user-select: none;
 }
 
 .pagination .arrow {
-    margin: 0 5px;
-    cursor: pointer;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #BAA256;
 }

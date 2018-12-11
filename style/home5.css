@@ -1,0 +1,44 @@
+
+.events {
+    margin-top: 5.6rem;
+    margin-bottom: 2.3rem;
+}
+.events img {
+    width: 100%;
+    object-fit: fill;
+}
+.event-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.event-link a {
+    display: block;
+    padding: 10px 16px;
+    color: #BAA256;
+    border: 1px solid #BAA256;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    z-index: 1;
+}
+
+.event-link a::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    background: transparent;
+    z-index: -1;
+}
+
+.event-link a:hover {
+    color: #222222;
+}
+
+.event-link a:hover::before {
+    background: #BAA256;
+}

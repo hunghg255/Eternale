@@ -1,0 +1,119 @@
+.slide-content-home3 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.slide-content-img {
+    flex: 1 1 0;
+}
+
+.slide-content-img img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.slide-content-info {
+    flex-basis: 30%;
+}
+
+section.slide-content-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #363636;
+    text-align: left;
+}
+
+.title h2 {
+    text-align: left;
+    color: white;
+    text-transform: uppercase;
+    font-size: 3.2rem;
+}
+
+.title__under h3 {
+    text-align: left;
+    color: #baa256;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.title__under {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.title__under:before {
+    content: '';
+    position: absolute;
+    width: 49%;
+    height: 2px;
+    background: #baa256;
+    left: 0;
+    bottom: -2px;
+}
+
+.time-start p {
+    color: white;
+}
+
+.time-start p:nth-child(1) {
+    font-size: 1.7rem;
+    margin-bottom: 1.6rem;
+}
+
+.time-start {
+    padding-right: 0rem;
+}
+
+.time-start p:nth-child(2), .time-start p:nth-child(3) {
+    font-size: 20px;
+}
+
+.restaurant-name p {
+    color: #baa256;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.restaurant-name {
+    padding-left: 12px;
+    margin: 2rem;
+}
+
+.btn-see-more {
+    padding-right: 13rem;
+}
+
+.btn-see-more a {
+    text-decoration: none;
+    color: #baa256;
+    text-transform: uppercase;
+    display: block;
+    padding: .9rem 1.5rem;
+    border: 1px solid #baa256;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-see-more a:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    background: transparent;
+    z-index: -1;
+}
+
+.btn-see-more a:hover {
+    color: #363636;
+}
+
+.btn-see-more a:hover:before {
+    background: #baa256;
+}

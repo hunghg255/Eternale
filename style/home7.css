@@ -1,5 +1,4 @@
 /*---------------------------- home7 ---------------------------------*/
-
 .main--book {
     height: calc(100vh - 80px);
     width: 100%;
@@ -67,8 +66,12 @@
 .main--book--center--content--form {
     text-align: left;
     color: #b9a155;
+    display: flex;
+    flex-direction: column;
 }
-
+input#adultnumber {
+    margin-right: 15px;
+}
 .main--book--center--content--form--input {
     margin-bottom: 16px;
     border-bottom: 1px solid #b9a155;
@@ -98,7 +101,6 @@ ul {
     flex-wrap: wrap;
 }
 .main--book--center--content--calendar--weekdays li {
-    /*flex: 1;*/
     color: #b9a155;
     padding: 8px 0;
     width: calc(100% / 7);

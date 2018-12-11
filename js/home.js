@@ -5,75 +5,83 @@ document.addEventListener("DOMContentLoaded", function () {
     let closeHomeExplore = document.querySelector('#btn-home-explore-close');
     let openExplore = document.querySelector('#btn-open-explore');
     let contentHome2 = document.querySelector('.slide-content-main2');
+    let arrowLeft = document.querySelector("#arrow-left");
+    let arrowRight = document.querySelector("#arrow-right");
+    let count = document.querySelector('#counter');
+    let btnHome6Contact = document.querySelector('.btn-contact');
+    let formHome6Contact = document.querySelector('.home6-register');
 
 
     btnHomeExplore.addEventListener('click', function () {
-        homeExplore.classList.toggle('active');
         home.classList.toggle('active');
         contentHome2.classList.toggle('active');
+        if (homeExplore.style.maxHeight) {
+            homeExplore.style.maxHeight = null;
+        } else {
+            homeExplore.style.maxHeight = homeExplore.scrollHeight + "px";
+        }
     });
 
     closeHomeExplore.addEventListener('click', function () {
-        homeExplore.classList.toggle('active');
         home.classList.toggle('active');
         contentHome2.classList.toggle('active');
+        if (homeExplore.style.maxHeight) {
+            homeExplore.style.maxHeight = null;
+        } else {
+            homeExplore.style.maxHeight = homeExplore.scrollHeight + "px";
+        }
     });
 
     openExplore.addEventListener('click', function () {
-        homeExplore.classList.toggle('active');
         home.classList.toggle('active');
+
+        if (homeExplore.style.maxHeight) {
+            homeExplore.style.maxHeight = null;
+        } else {
+            homeExplore.style.maxHeight = homeExplore.scrollHeight + "px";
+        }
+    });
+
+    arrowRight.addEventListener('click', function () {
+        NextSilde();
     });
 
 
-    let sliderImages = document.querySelectorAll(".slide"),
-        arrowLeft = document.querySelector("#arrow-left"),
-        arrowRight = document.querySelector("#arrow-right"),
-        current = 0;
-
-    // Clear all images
-    function reset() {
-        for (let i = 0; i < sliderImages.length; i++) {
-            sliderImages[i].style.display = "none";
-        }
-    }
-
-    // Init slider
-    function startSlide() {
-        reset();
-        sliderImages[0].style.display = "block";
-    }
-
-    // Show prev
-    function slideLeft() {
-        reset();
-        sliderImages[current - 1].style.display = "block";
-        current--;
-    }
-
-    // Show next
-    function slideRight() {
-        reset();
-        sliderImages[current + 1].style.display = "block";
-        current++;
-    }
-
-    // Left arrow click
-    arrowLeft.addEventListener("click", function () {
-        if (current === 0) {
-            current = sliderImages.length;
-        }
-        slideLeft();
+    arrowLeft.addEventListener('click', function () {
+        PrevSlide();
     });
 
-    // Right arrow click
-    arrowRight.addEventListener("click", function () {
-        if (current === sliderImages.length - 1) {
-            current = -1;
+    function NextSilde() {
+        let slideCurrent = document.querySelector(".slide.active");
+        let nextSlide = slideCurrent.nextElementSibling;
+
+        if (nextSlide) {
+            slideCurrent.classList.add('hidden');
+            slideCurrent.classList.remove('active');
+            nextSlide.classList.add('active');
+            count.innerHTML = (parseInt(count.textContent) + 1).toString();;
+        } else {
+            return;
         }
-        slideRight();
+    }
+
+    function PrevSlide() {
+        let slideCurrent = document.querySelector(".slide.active");
+        let prevSlide = slideCurrent.previousElementSibling;
+        let nextSlide = slideCurrent.nextElementSibling;
+
+        if (prevSlide) {
+            prevSlide.classList.add("active");
+            prevSlide.classList.remove("hidden");
+            slideCurrent.classList.remove("active");
+            count.innerHTML = (parseInt(count.textContent) - 1).toString();
+        } else {
+            return;
+        }
+    }
+
+    btnHome6Contact.addEventListener('click', function () {
+        formHome6Contact.classList.toggle('active');
     });
 
-    startSlide();
-
-    
 }, false);

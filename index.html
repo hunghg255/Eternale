@@ -329,9 +329,11 @@
                                                 <li>Sa</li>
                                             </ul>
                                             <ul class="main--book--center--content--calendar--days main--book--center--content--calendar--days__end">
+
                                                 <li>1</li>
                                                 <li>2</li>
                                                 <li>3</li>
+
                                             </ul>
                                             <ul class="main--book--center--content--calendar--days">
                                                 <li>4</li>
@@ -351,17 +353,19 @@
                                                 <li>18</li>
                                                 <li>19</li>
                                                 <li>20</li>
-                                                <li>21</li>
-                                                <li>22</li>
-                                                <li>23</li>
-                                                <li>24</li>
+                                                <li class="active--booking">21</li>
+                                                <li class="selected">22</li>
+                                                <li class="selected">23</li>
+                                                <li class="active--booking">24</li>
                                                 <li>25</li>
                                                 <li>26</li>
                                                 <li>27</li>
                                                 <li>28</li>
                                                 <li>29</li>
                                                 <li>30</li>
+
                                             </ul>
+
                                         </div>
                                         <div class="main--book--center--content--calendar main--book--center--content--calendar2">
                                             <p>December 2018</p>
@@ -375,7 +379,10 @@
                                                 <li>Sa</li>
                                             </ul>
                                             <ul class="main--book--center--content--calendar--days main--book--center--content--calendar--days__end">
+
                                                 <li>1</li>
+
+
                                             </ul>
                                             <ul class="main--book--center--content--calendar--days">
                                                 <li>2</li>
@@ -408,15 +415,18 @@
                                                 <li>29</li>
                                                 <li>30</li>
                                                 <li>31</li>
+
                                             </ul>
+
                                         </div>
                                         <form id='bookform' class="main--book--center--content--form">
                                             <label for="staydate">Your Stay Date</label>
                                             <input type="text" id="staydate" name="staydate" class="main--book--center--content--form--input"
                                                 value="22 Nov 2018 - 23 Nov 2018" />
                                             <label for="roomtype">Type of Room</label>
-                                            <input type="text" id="roomtype" name="roomtype" class="main--book--center--content--form--input"
-                                                value="Deluxe Room" />
+                                            <select name="roomtype" id="roomtype" class="main--book--center--content--form--input">
+                                                <option value="deluxe">Deluxe Room</option>
+                                            </select>
                                             <label for="adultnumber">Number of people</label>
                                             <div class="main--book--center--content--form--formcontainer">
                                                 <input type="text" id="adultnumber" name="adultnumber" class="main--book--center--content--form--input main--book--center--content--form--input--half"
@@ -426,10 +436,11 @@
                                             </div>
                                         </form>
                                     </div>
-                                    <div onclick="submitForm()" class="button__frame">
+                                    <div class="button__frame">
                                         <div class="button__empty">Check Availability</div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>

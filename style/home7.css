@@ -1,14 +1,12 @@
-/*---------------------------- home7 ---------------------------------*/
 .main--book {
     height: calc(100vh - 80px);
     width: 100%;
-    display: flex;
 }
 
 .main--book--center {
     height: auto;
     width: 70%;
-    background: rgba(32,29,26,.8);
+    background: rgba(73,68,65,.9);
     margin: auto;
     align-items: center;
     box-sizing: border-box;
@@ -22,6 +20,7 @@
     margin-bottom: 32px;
     text-transform: uppercase;
     font-size: 72px;
+    font-family: Basker;
 }
 
 .main--book--center--content {
@@ -39,6 +38,8 @@
     padding-bottom: 4px;
     margin-bottom: 4px;
     color: #b9a155;
+    font-family: Basker;
+    font-size: 20px;
 }
 
 .main--book--center--content--calendar--weekdays {
@@ -51,35 +52,108 @@
 
 .main--book--center--content--calendar--days li {
     border: 1px solid #b9a155;
+    
     box-sizing: border-box;
     width: calc(100% / 7);
     padding: 8px 0;
+    transition: all .3s ease;
+    position: relative;
+    font-family: Basker;
 }
 .main--book--center--content--calendar--days {
     color: #eae2c5;
 }
 
+
+.main--book--center--content--calendar--days li::before {
+    content: '';
+    position: absolute;
+    border: 1px solid #000;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0;
+}
+
+
+.main--book--center--content--calendar--days li:hover {
+    background: #b9a155;
+    cursor: pointer;
+}
+
+.main--book--center--content--calendar--days li:hover::before {
+    opacity: 1;
+}
+
+
+li[class="main--book--center--content--calendar--days__unavailable"]:hover {
+    color: #9e9b99;
+    cursor: context-menu;
+    background: transparent;
+}
+
+li[class="main--book--center--content--calendar--days__unavailable"]:hover::before {
+    opacity: 0;
+}
+
+
 .main--book--center--content--calendar--days__unavailable {
     color: #9e9b99;
+}
+
+.active--booking {
+    position: relative;
+    transition: all 0.3s ease;
+    background: #b9a155;
+    color: #201d1a;
+}
+
+
+.active--booking:hover {
+    color: #eae2c5;
+}
+
+.main--book--center--content--calendar--days li[class="active--booking"]::before {
+    content: '';
+    position: absolute;
+    border: 1px solid #000;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 1;
+}
+
+.selected {
+    background: #201d1a;
 }
 
 .main--book--center--content--form {
     text-align: left;
     color: #b9a155;
-    display: flex;
-    flex-direction: column;
+
 }
-input#adultnumber {
-    margin-right: 15px;
+
+.main--book--center--content--form label {
+    font-family: Basker;
+    font-size: 20px;
 }
+
 .main--book--center--content--form--input {
     margin-bottom: 16px;
     border-bottom: 1px solid #b9a155;
     background: rgba(32,29,26,.7);
     color: #9e9b99;
     height: 40px;
-    font-family: 'Times New Roman';
+    font-family: Basker;
     font-size: 1rem;
+
+}
+
+select {
+    width: 100%;
+    border: none;
 }
 .main--book--center--content--form--input:focus {
     outline: none;
@@ -101,9 +175,20 @@ ul {
     flex-wrap: wrap;
 }
 .main--book--center--content--calendar--weekdays li {
+    /*flex: 1;*/
     color: #b9a155;
-    padding: 8px 0;
+    /*padding: 4px 0;*/
     width: calc(100% / 7);
+    font-family: Lato;
+    font-size: 12px;
+}
+form#bookform {
+    display: flex;
+    flex-direction: column;
+}
+
+.main--book--center {
+    margin-top: 8rem;
 }
 
 form#bookform input {

@@ -7,6 +7,32 @@
 @import "home6.css";
 @import "home7.css";
 
+
+@font-face {
+  font-family: FreightBigPro;
+  src: url('/Font/FreightBigProMedium.otf');
+}
+
+@font-face {
+  font-family: FuturaPT;
+  src: url('/Font/FuturaPTLight_0.otf');
+}
+
+@font-face {
+  font-family: Basker;
+  src: url('/Font/BASKVILL.ttf');
+}
+
+
+@font-face {
+  font-family: GreatVibes;
+  src: url('/Font/GreatVibes-Regular.otf');
+}
+@font-face {
+  font-family: Lato;
+  src: url('/Font/Lato-Regular.ttf');
+}
+
 html, body {
     position: relative;
     height: 100%;

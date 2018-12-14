@@ -5,11 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
     let closeHomeExplore = document.querySelector('#btn-home-explore-close');
     let openExplore = document.querySelector('#btn-open-explore');
     let contentHome2 = document.querySelector('.slide-content-main2');
-    let arrowLeft = document.querySelector("#arrow-left");
-    let arrowRight = document.querySelector("#arrow-right");
-    let count = document.querySelector('#counter');
     let btnHome6Contact = document.querySelector('.btn-contact');
     let formHome6Contact = document.querySelector('.home6-register');
+    let prevSlide = document.querySelector('.swiper-button-prev');
+    let nextSlide = document.querySelector('.swiper-button-next');
+    let menuItem = document.querySelectorAll('.menu-item');
 
 
     btnHomeExplore.addEventListener('click', function () {
@@ -42,46 +42,29 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    arrowRight.addEventListener('click', function () {
-        NextSilde();
-    });
-
-
-    arrowLeft.addEventListener('click', function () {
-        PrevSlide();
-    });
-
-    function NextSilde() {
-        let slideCurrent = document.querySelector(".slide.active");
-        let nextSlide = slideCurrent.nextElementSibling;
-
-        if (nextSlide) {
-            slideCurrent.classList.add('hidden');
-            slideCurrent.classList.remove('active');
-            nextSlide.classList.add('active');
-            count.innerHTML = (parseInt(count.textContent) + 1).toString();;
-        } else {
-            return;
-        }
-    }
-
-    function PrevSlide() {
-        let slideCurrent = document.querySelector(".slide.active");
-        let prevSlide = slideCurrent.previousElementSibling;
-        let nextSlide = slideCurrent.nextElementSibling;
-
-        if (prevSlide) {
-            prevSlide.classList.add("active");
-            prevSlide.classList.remove("hidden");
-            slideCurrent.classList.remove("active");
-            count.innerHTML = (parseInt(count.textContent) - 1).toString();
-        } else {
-            return;
-        }
-    }
-
     btnHome6Contact.addEventListener('click', function () {
         formHome6Contact.classList.toggle('active');
     });
+
+    nextSlide.addEventListener('click', function () {
+        menu();
+    });
+    prevSlide.addEventListener('click', function () {
+        menu();
+    });
+
+    setInterval(()=> {
+        menu();
+    }, 1);
+
+    function menu() {
+        let slideActive = document.querySelector('.swiper-slide-active');
+        document.querySelector('.menu-item.active').classList.remove('active');
+        for (x of menuItem) {       
+            if (x.id === slideActive.id) {
+                x.classList.add('active');
+            }
+        }
+    }
 
 }, false);

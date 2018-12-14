@@ -72,3 +72,20 @@
 .main__part:hover::before {
     opacity: .3;
 }
+
+.main__left:hover .button__empty.button--pool {
+    background: #baa256;
+    color: #363636;
+}
+.main__right--top:hover .button__empty {
+    background: #baa256;
+    color: #363636;
+}
+.main__right--bottom--left:hover .button__empty {
+    background: #baa256;
+    color: #363636;
+}
+.main__right--bottom--right:hover .button__empty {
+    background: #baa256;
+    color: #363636;
+}

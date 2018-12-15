@@ -113,7 +113,9 @@ iframe {
 }
 .form-home6 input {
     font-size: 1rem;
+    padding: 4px 2px;
 }
+
 .form-massage {
     grid-column: span 2;
 }

@@ -18,6 +18,7 @@
     flex-direction: column;
     position: relative;
     z-index: 0;
+    overflow: hidden;
 }
 .slide-content-main2 > div {
   flex: 1;
@@ -27,6 +28,35 @@
   z-index: 0;
 }
 
+
+.card-mark {
+    position: absolute;
+    width: 250px;
+    height: 530px;
+    background: rgba(0, 0, 0, .4);
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 300ms;
+    z-index: -1;
+}
+.card-mark::before {
+    content: '';
+    position: absolute;
+    border-top: 50px solid rgba(0, 0, 0, .4);
+    border-left: 125px solid transparent;
+    border-right: 125px solid transparent;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 530px;
+}
+.card:hover .card-mark {
+    top: 0;
+}
+
+.card:hover::before {
+    opacity: 0;
+}
 .slide-content-main2 .card:before {
     content: '';
     margin: 0 auto;

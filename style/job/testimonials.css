@@ -1,0 +1,527 @@
+
+/**************** BANNER *******************/
+.banner {
+    background-image: url("../img/TourInHanoi/the-beekman-lobby-richard-barnes.jpg.1200x800_q85_crop.png");
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -377px
+  }
+  
+  .banner img {
+    width: 100%;
+    background-size: auto;
+    background-position-y: -150px;
+  }
+  
+  .banner .overlay {
+    position: absolute;
+    content: '';
+    background-color: #000;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    top: 0;
+  
+  }
+  
+  .banner-text {
+    font-family: greatVibes;
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  .banner--navigator {
+    position: absolute;
+    content: '';
+    top: 90%;
+    right: 2%;
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .banner--navigator .home--link {
+   color: #fff;
+   text-decoration: none;
+  }
+  
+  .banner--navigator .home--link:hover {
+    text-decoration: underline;
+  }
+  
+  .banner--navigator .location--link {
+    color: #BBA256;
+    text-decoration: none;
+  }
+  
+  
+  .banner--navigator .location--link:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .banner--navigator span {
+    color: #BAA256;
+  }
+  
+  .banner--navigator i {
+    font-size: 10px;
+  }
+  
+  
+  /****************** END BANNER *******************/
+
+
+
+
+  /***************FOOTER**********************/
+  @font-face {
+	font-family: FreightBigPro;
+	src: url(/fonts/FreightBigProMedium.otf);
+  }
+  
+  @font-face {
+	font-family: FuturaPT;
+	src: url('/fonts/FuturaPTLight_0.otf');
+  }
+  
+  @font-face {
+	font-family: Basker;
+	src: url('/fonts/BASKERVILLEOLDFACE.TTF');
+  }
+  
+  .button__frame {
+	padding: 5px;
+	height: auto;
+	width: auto;
+	display: inline-block;
+	border: 1px solid #b9a155;
+	cursor: pointer;
+  }
+  
+  
+  .button__empty {
+	background: transparent;
+	  display: inline-block;
+	  /*margin: 5px;*/
+	  padding: 11px 40px 12px 40px;
+	  position: relative;
+	  /*border: 1px solid #b9a155;*/
+	  text-transform: uppercase;
+	  color: #b9a155;
+	  transition: all .3s ease;
+  
+  }
+  
+  
+  .button__frame:hover .button__empty {
+	color: #201d1a;
+	background: #b9a155;
+  }
+  
+  .main--footer--content {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 112px;
+  }
+  
+  .main--footer--content--list, .main--footer--content--follow--about {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .main--footer--content--list li, .main--footer--content--follow--about li {
+	width: auto;
+	line-height: 24px;
+  
+  }
+  .main--footer--content--about--info, .main--footer--content--follow--followus  {
+	margin-bottom: 16px;
+  }
+  
+  .main--footer--content--signup--wrapper {
+	position: relative;
+	height: 100%;
+  }
+  
+  .main--footer--content--signup a {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #b9a155;
+	text-decoration: underline;
+	font-family: Basker;
+  }
+  
+  .main--footer--wrapper h2, .main--footer--wrapper h3 {
+	margin: 0;
+	margin-bottom: 16px;
+	color: #b9a155;
+	font-family: Basker;
+	text-transform: uppercase;
+  }
+  
+  .main--footer--wrapper h2 {
+	font-size: 2rem;
+  }
+  
+  .main--footer--content--about, .main--footer--content--signup, .main--footer--content--follow {
+	padding: 32px 0;
+  }
+  
+  .main--footer--content--signupemail--label {
+	margin-bottom: 16px;
+  }
+  .main--footer--content--signupemail--input {
+	margin-bottom: 16px;
+	background: #201d1a;
+	color: #fff;
+	width: 100%;
+	border: none;
+	height: 30px;
+	box-sizing: border-box;
+	padding: 5px;
+  }
+  
+  .main--footer--content--follow--followus li:first-child {
+	display: flex;
+	align-items: flex-end;
+	margin-right: 32px;
+	font-family: FuturaPT;
+	font-weight: 600;
+  }
+  .main--footer--content--follow--followus li {
+	margin-right: 16px;
+	color: #b9a155;
+  }
+  
+  .main--footer--content--follow--followus {
+	font-size: 24px;
+  }
+  
+  .main--footer--wrapper {
+	background: #494441;
+	padding: 0 56px;
+  }
+  
+  .main--footer--content--list a, .main--footer--content--follow--about a, label, .main--footer p {
+	color: #fff;
+	font-family: FuturaPT;
+  }
+  
+  .main--footer p {
+	line-height: 24px;
+  }
+  
+  .main--footer--content--list li:first-child, .main--footer--content--list li:last-child {
+	text-transform: uppercase;
+  }
+  /* .main--footer--content--signupemail--input {
+  
+  } */
+  
+  .main--footer--content--list a:hover, .main--footer--content--follow--about a:hover {
+	color: #b9a155;
+  }
+  
+  .main--footer--content--follow--wrapper {
+	position: relative;
+	height: 100%;
+  }
+  .main--footer--content--follow--totop {
+	display: inline-block;
+	padding: 16px;
+	color: #b9a155;
+	border-right: 1px solid #b9a155;
+	border-left: 1px solid #b9a155;
+	border-bottom: 1px solid #b9a155;
+	padding: 8px 12px 16px 12px;
+	position: relative;
+  
+  }
+  .main--footer--content--follow--totop--wrapper {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+  }
+  .main--footer--content--follow--totop::before {
+	  content: '';
+	  position: absolute;
+	  border-right: 17px solid transparent;
+	  border-left: 17px solid transparent;
+	  border-bottom: 18px solid #b9a155;
+	  left: -1px;
+	  top: -18px;
+  }
+  
+  .main--footer--content--follow--totop::after {
+	content: '';
+	  position: absolute;
+	  border-right: 16px solid transparent;
+	  border-left: 16px solid transparent;
+	  border-bottom: 18px solid #494441;
+	  left: 0px;
+	  top: -18px;
+  }
+  .main--footer--content--follow--award {
+	line-height: 0;
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	background: url(/img/TRIP1.png);
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 16px;
+	background-color: #fff;
+  }
+  
+  .main--footer--content--follow--award img {
+	width: 100%;
+	height: 100%;
+  }
+  
+  .main--footer p {
+	margin: 0;
+  }
+  .main--footer ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+  }
+  .main--footer--content--list a, .main--footer--content--follow--about a {
+	text-decoration: none;
+  }
+  
+  ul[class="main--footer--content--follow--followus"] {
+	display: flex;
+	margin-bottom: 16px;
+  }
+  /* .main--footer--content--follow--followus li {
+	
+  } */
+  
+  .main--footer a {
+	transition: all .3s ease;
+  }
+  .main--footer label {
+	display: block;
+  }
+  .main--footer--content--follow--followus a {
+	color: #b9a155;
+  }
+
+
+
+/***************************************************CONTENT************************************************/ 
+
+  *, body {
+    margin: 0;
+    padding: 0;
+    font-family: baskerville-old-face;
+    box-sizing: border-box;
+  }
+  
+  
+  @font-face {
+    font-family: greatVibes;
+    src: url(../Font/GreatVibes-Regular.otf);
+  }
+  
+  /****************** CONTENT *******************/
+  .content {
+    width: 100%;
+    height: auto;
+    background-color: #222222;
+    text-align: center;
+    display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  }
+
+  
+  /**********************COL-LEFT *********************/
+  
+  .content .col-left {
+    -ms-flex: 33.33%; /* IE10 */
+    flex: 33.33%;
+  }
+  .content .col-middle {
+    -ms-flex: 33.33%; /* IE10 */
+    flex: 33.33%;
+ 
+  }
+  .content .col-right {
+    -ms-flex: 33.33%; /* IE10 */
+    flex: 33.33%;
+
+  }
+
+  .testimonial {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    padding :35px;
+    text-align: center;
+    transition: 0.4s;
+    
+  }
+  
+  .testimonial .profile--creator {
+    transition: 0.4s;
+  }
+  
+  /*.testimonial:hover {
+    box-shadow: 0 0 1px 1px #BBA256;
+  }
+  */
+  .testimonial:hover .profile--creator {
+    border: 1px solid #BBA256;
+  }
+  
+  .testimonial h1 {
+    font-size: 28px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+    /* margin-bottom: 10px; hà sửa */
+  }
+  
+  .testimonial .title p {
+    font-family: Great Vibes;
+    color: #BBA256;
+    font-size: 18px;
+    padding-bottom: 6px;
+  }
+  
+  .testimonial hr {
+    height: 1px;
+    width: 35%;
+    margin-left: 32%;
+    margin-bottom: 40px;
+    background-color: #BBA256;
+    border: none;
+  }
+  
+  .testimonial .card img {
+    margin-top: 35px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      border-radius: 50%;
+  }
+  
+  .testimonial .profile_info-image {
+    position: relative;
+  }
+  
+  .testimonial .profile_info-image::before {
+    position: absolute;
+    top: 80%;
+    left: 60%;
+    content: "''";
+    width: 9%;
+    height: 18%;
+    border-radius: 50%;
+    background-color: #BBA256;
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .testimonial .card h3{
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+  }
+  
+  .profile_info {
+    padding: 10px 10px 0px 10px;
+    height: 140px;
+    color: black;
+    font-family: Futura PT;
+    font-size: 18px;
+    position: relative;
+    background: #f1f1f1;
+  }
+  
+  .profile_info:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-top-color: #f1f1f1;
+    border-width: 20px;
+    margin-left: -7%;
+  }
+  
+  .profile_info p {
+    text-align: left
+  }
+  
+  .card {
+    position: relative;
+  }
+  
+ 
+  .card {
+    position: relative;
+  }
+  .pagination {
+      background-color: #222222;
+    text-align: center;
+    padding-bottom: 56px;
+  }
+  
+  .pagination .dir--btn__ {
+    width: 20px;
+    height: 20px;
+    background-color: #BBA256;
+    border: none;
+    -webkit-clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+    clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .pagination .dir--btn__pre {
+    -webkit-clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+    clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+  }
+  
+  .pagination .dir--btn__next {
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  }
+  
+  .pagination .dir--btn__pre i {
+    transform: rotate(-90deg);
+  }
+  
+  .pagination .dir--btn__next i {
+    transform: rotate(90deg);
+  }
+  
+  .pagination__text {
+    display: inline;
+    color: #fff;
+    padding: 0 5px;
+  }
+  
+  

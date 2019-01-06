@@ -1,0 +1,247 @@
+@import "banner.css";
+
+/*------------------------------------- 3 yellow dot SECTION------------*/
+
+.main1--top {
+    height: 120px;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background: #222222;
+}
+
+
+.main1--top--center {
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    /*background: pink;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+}
+
+.main1--top--center .pin {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 102%;
+}
+
+.main1--top--center .pin1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 210%;
+    height: 50px;
+    width: 50px;
+}
+
+.pin1 .pin1--wrapper {
+    height: 100%;
+    width: 100%;
+    border-top: 2px solid #BAA256;
+    border-left: 2px solid #BAA256;
+    border-right: 2px solid #BAA256;
+    position: relative;
+    background: #fff;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pin1 .pin1--wrapper:before {
+    content: '';
+    position: absolute;
+    border-top: 18px solid #BAA256;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    left: -2px;
+    bottom: -18px;
+}
+.pin1 .pin1--wrapper:after {
+    content: '';
+    position: absolute;
+    border-top: 15px solid #fff;
+    border-left: 23px solid transparent;
+    border-right: 23px solid transparent;
+    left: 0px;
+    bottom: -15px;
+}
+
+.main1--top--center--item {
+    box-sizing: border-box;
+    /*padding: 10px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main1--top--center--item::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.main1--top--center--item--left {
+    position: relative;
+    float: left;
+    height: 70px;
+    width: 70px;
+    /*border: 10px solid #9e9b99;*/
+    
+
+}
+.main1--top--center--item--left--outercircle {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    background: #9e9b99;
+    opacity: .5;
+}
+
+.main1--top--center--item--left--innercircle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #b9a155;
+    /*z-index: 1;*/
+    opacity: 1;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+
+.main1--top--center--item--right {
+    color: #f4f4f4;
+    box-sizing: border-box;
+    padding-left: 16px;
+    text-align: left;
+}
+
+.main1--top--center--item--right h3, p {
+    margin: 0;
+    font-family: Lato;
+}
+
+.main1--top--center--item--right h3 {
+    text-transform: uppercase;
+}
+
+/*-------------------------------------END 3 yellow dot SECTION -----------------------------------------*/
+
+/*----------------MAPS SECTION------------------*/
+.main--maps--holder {
+	height: 650px;
+	width: 100%;
+	overflow-y: hidden;
+	position: relative;
+}
+.main--maps--holder::before {
+    content: '';
+    position: absolute;
+    background: rgba(0,0,0,.2);
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+/*----------------END MAPS SECTION------------------*/
+
+
+/*----------------------------Contact Form SECTION------------------------------------*/
+.main1--contact {
+    width: 100%;
+
+    height: 100%;
+    background: #222222;
+    display: grid;
+    align-content: end;
+
+}
+
+.main1--contact--center {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    background: #363636;
+    transition: all .3s ease;
+    padding: 16px 48px;
+    text-align: center;
+    color: #fff;
+    box-sizing: border-box;
+    margin-top: -200px;
+  	position: relative;
+  	z-index: 10;
+}
+
+.main1--contact--center h2 {
+    margin: 0;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    /*display: inline-block;*/
+    /*cursor: pointer;*/
+    font-family: Basker;
+    font-size: 56px;
+}
+
+.main1--contact--center label {
+    display: inline-block;
+    line-height: 32px;
+}
+
+.main1--contact--center form {
+    height: auto;
+    /*display: grid;
+    grid-template-columns: 1fr 1fr;*/
+}
+
+
+.contactform--top {
+    margin-bottom: 16px;
+}
+
+.contactform--top label, .contactform--top input, .contactform--top textarea {
+    font-family: Lato;
+}
+
+.contactform--top--top, .contactform--top--bottom {
+    display: flex;
+    justify-content: space-between;
+    /*margin-bottom: 8px;*/
+}
+
+.contactform--top--message {
+    text-align: left;
+}
+
+.contactform--top--top {
+    
+}
+
+.contactform--top--top--left, .contactform--top--top--right, .contactform--top--bottom--left, .contactform--top--bottom--right {
+    width: 49%;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    border: none;
+    height: 30px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    height: 60px;
+}
+/*--------------------------END Contact Form SECTION---------------------------------*/

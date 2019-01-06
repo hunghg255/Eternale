@@ -1,0 +1,68 @@
+@import "header.css";
+@import "footer.css";
+@font-face {
+    font-family: FuturaPT;
+    src: url('../Font/FuturaPTLight_0.otf');
+}
+
+@font-face {
+    font-family: Basker;
+    src: url('../Font/BASKERVILLEOLDFACE.TTF');
+}
+
+
+@font-face {
+    font-family: GreatVibes;
+    src: url('../Font/GreatVibes-Regular.otf');
+}
+main {
+    background: #222222;
+}
+
+.notify-404 {
+    width: 100%;
+    height: 300px;
+    background: url('../img/404/bkgd--section-1--2-1280-7f7c39ec696c2ff834c4be759e454668e7e2ac4a26d690bb1ef29f5b36556227.png') no-repeat;
+    background-size: cover;
+    background-position: center 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notify-404 h1 {
+    color: white;
+    font-size: 85px;
+    font-family: GreatVibes;
+}
+.content-404 {
+    padding: 2.4rem 0;
+}
+.content-404, .content-title {
+    text-align: center;
+}
+
+.content-title h2 {
+    color: #BAA256;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-family: FuturaPT;
+}
+.content-title {
+    position: relative;
+    margin-bottom: 1.2rem;
+}
+.content-title::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: 10%;
+    height: 2px;
+    background: #BAA256;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.content-404 span {
+    color: white;
+    font-size: 1rem;
+}

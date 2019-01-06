@@ -1,0 +1,305 @@
+/*---------------------- MENU--------------------------- */
+/* @import "header.css";
+   */
+/**************** BANNER *******************/
+.banner {
+    
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -377px
+  }
+  
+  .banner img {
+    width: 100%;
+    background-size: auto;
+    background-position-y: -150px;
+  }
+  
+  .banner .overlay {
+    position: absolute;
+    content: '';
+    background-color: #000;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    top: 0;
+  
+  }
+  
+  .banner-text {
+    font-family: greatVibes;
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  .banner--navigator {
+    position: absolute;
+    content: '';
+    top: 90%;
+    right: 2%;
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .banner--navigator .home--link {
+   color: #fff;
+   text-decoration: none;
+  }
+  
+  .banner--navigator .home--link:hover {
+    text-decoration: underline;
+  }
+  
+  .banner--navigator .location--link {
+    color: #BBA256;
+    text-decoration: none;
+  }
+  
+  
+  .banner--navigator .location--link:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .banner--navigator span {
+    color: #BAA256;
+  }
+  
+  .banner--navigator i {
+    font-size: 10px;
+  }
+  
+  
+  /****************** END BANNER *******************/
+
+
+
+
+
+  /*RESPONSIVE FOR FOOTER*/
+  @media (max-width: 1367px) {
+   .main--footer--content {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 224px;
+   }
+   .main--footer--wrapper {
+    padding: 0 192px;
+   }
+   .main--footer--content--follow--totop--wrapper {
+    right: -146px;
+   }
+  }
+  /*END RESPONSIVE FOR FOOTER*/
+  
+
+/***************************************************CONTENT************************************************/ 
+
+  *, body {
+    margin: 0;
+    padding: 0;
+    font-family: baskerville-old-face;
+    box-sizing: border-box;
+  }
+  
+  
+  @font-face {
+    font-family: greatVibes;
+    src: url(../Font/GreatVibes-Regular.otf);
+  }
+  
+  /****************** CONTENT *******************/
+  .content {
+    width: 100%;
+    height: auto;
+    background-color: #222222;
+    text-align: center;
+    display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  }
+
+  
+  /**********************COL-LEFT *********************/
+  
+  .content .col-left {
+    -ms-flex: 33.33%; /* IE10 */
+    flex: 33.33%;
+  }
+  .content .col-middle {
+    -ms-flex: 33.33%; /* IE10 */
+    flex: 33.33%;
+ 
+  }
+  .content .col-right {
+    -ms-flex: 33.33%; /* IE10 */
+    flex: 33.33%;
+
+  }
+
+  .testimonial {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    padding :35px;
+    text-align: center;
+    transition: 0.4s;
+    
+  }
+  
+  .testimonial .profile--creator {
+    transition: 0.4s;
+  }
+  
+  /*.testimonial:hover {
+    box-shadow: 0 0 1px 1px #BBA256;
+  }
+  */
+  .testimonial:hover .profile--creator {
+    border: 1px solid #BBA256;
+  }
+  
+  .testimonial h1 {
+    font-size: 28px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+    /* margin-bottom: 10px; hà sửa */
+  }
+  
+  .testimonial .title p {
+    font-family: Great Vibes;
+    color: #BBA256;
+    font-size: 18px;
+    padding-bottom: 6px;
+  }
+  
+  .testimonial hr {
+    height: 1px;
+    width: 35%;
+    margin-left: 32%;
+    margin-bottom: 40px;
+    background-color: #BBA256;
+    border: none;
+  }
+  
+  .testimonial .card img {
+    margin-top: 35px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      border-radius: 50%;
+  }
+  
+  .testimonial .profile_info-image {
+    position: relative;
+  }
+  
+  .testimonial .profile_info-image::before {
+    position: absolute;
+    top: 80%;
+    left: 60%;
+    content: "''";
+    width: 9%;
+    height: 18%;
+    border-radius: 50%;
+    background-color: #BBA256;
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .testimonial .card h3{
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+  }
+  
+  .profile_info {
+    padding: 10px 10px 0px 10px;
+    height: 140px;
+    color: black;
+    font-family: Futura PT;
+    font-size: 18px;
+    position: relative;
+    background: #f1f1f1;
+  }
+  
+  .profile_info:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-top-color: #f1f1f1;
+    border-width: 20px;
+    margin-left: -7%;
+  }
+  
+  .profile_info p {
+    text-align: left
+  }
+  
+  .card {
+    position: relative;
+  }
+  
+ 
+  .card {
+    position: relative;
+  }
+  .pagination {
+      background-color: #222222;
+    text-align: center;
+    padding-bottom: 56px;
+  }
+  
+  .pagination .dir--btn__ {
+    width: 20px;
+    height: 20px;
+    background-color: #BBA256;
+    border: none;
+    -webkit-clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+    clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .pagination .dir--btn__pre {
+    -webkit-clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+    clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+  }
+  
+  .pagination .dir--btn__next {
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  }
+  
+  .pagination .dir--btn__pre i {
+    transform: rotate(-90deg);
+  }
+  
+  .pagination .dir--btn__next i {
+    transform: rotate(90deg);
+  }
+  
+  .pagination__text {
+    display: inline;
+    color: #fff;
+    padding: 0 5px;
+  }
+  
+  

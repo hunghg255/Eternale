@@ -1,0 +1,297 @@
+/************************ COL-RIGHT *************************/
+
+.content-container .col-right {
+  flex: 370px;
+
+}
+
+.col-right .rating {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 35px 30px;
+  /* height: 562px; hà sửa */
+  background-color: #363636;
+  transition: 0.4s;
+}
+
+
+.rating:hover {
+  box-shadow: 0 0 1px 1px #BBA256;
+}
+
+.rating .title {
+  text-align: center;
+}
+
+.rating h1 {
+  font-size: 28px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #fff;
+  /* margin-bottom: 10px; hà sửa */
+}
+
+.rating .title p {
+  font-family: Great Vibes;
+  color: #BBA256;
+  font-size: 18px;
+  padding-bottom: 6px;
+}
+
+.rating hr {
+  height: 1px;
+  width: 30%;
+  margin-left: 36%;
+  background-color: #BBA256;
+  border: none;
+}
+
+.rating .static {
+  margin-top: 60px;
+}
+
+.static li {
+  list-style: none;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.static p {
+  color: #fff;
+  font-size: 20px;
+}
+
+.static .static--bar {
+  width: 100%;
+  height: 8px;
+  border: 1.5px solid #BAA256;
+  margin-top: 5px;
+  position: relative;
+}
+
+.static--bar::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  height: 62%;
+  background-color: #BAA256;
+}
+
+.static--bar__overall::before { width: 88%; }
+.static--bar__cleanliness::before { width: 91%; }
+.static--bar__value::before { width: 86%; }
+.static--bar__view::before { width: 84%; }
+.static--bar__services::before { width: 92%; }
+
+
+/* Span progress */
+.rating .static .base {
+  text-align: center;
+  font-family: Baskerville Old Face;
+  font-size: 14px;
+  color: #fff;
+  width: 40px;
+  height: 15px;
+  background-color: #363636;
+  top: 3px;
+  right: 15px;
+  position: absolute;
+  border-top: 1px solid #BAA256;
+  border-left: 1px solid #BAA256;
+  border-right: 1px solid #BAA256;
+}
+
+.rating .static .base::after,
+.rating .static .base::before {
+  border-top: 8px solid #BAA256;
+  border-left: 21px solid transparent;
+  border-right: 20px solid transparent;
+  content: "";
+  height: 0;
+  left: -1px;
+  position: absolute;
+  top: 14px;
+  width: 0;
+}
+.rating .static .base::after{
+  border-top-color: #363636;
+  border-width: 4.5px;
+  margin-left: 1.6px;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+}
+
+.rating .static .base::before {
+  border-color: rgba(194, 225, 245, 0);
+  border-top-color: #BAA256;
+  border-width: 6px;
+  margin-left: -0.5px;
+  border-left: 21px solid transparent;
+  border-right: 21px solid transparent;
+}
+
+button.bys-btn {
+  margin-left: 17%;
+  color: #BAA256;
+  width: 204px;
+  height: 60px;
+  background-color: #363636;
+  border: 1px solid #363636;
+  box-shadow: 0 0 0 2px #BAA256;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+button.bys-btn:hover {
+  color: #363636 ;
+  background-color:  #BBA256;
+}
+
+/*card*/
+.testimonial {
+  margin-top: 30px;
+  padding : 30px 35px;
+  background-color: #363636;
+  text-align: center;
+  transition: 0.4s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.testimonial .profile--creator {
+  transition: 0.4s;
+}
+
+/*.testimonial:hover {
+  box-shadow: 0 0 1px 1px #BBA256;
+}
+*/
+.testimonial:hover .profile--creator {
+  border: 1px solid #BBA256;
+}
+
+.testimonial h1 {
+  font-size: 28px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #fff;
+  /* margin-bottom: 10px; hà sửa */
+}
+
+.testimonial .title p {
+  font-family: Great Vibes;
+  color: #BBA256;
+  font-size: 18px;
+  padding-bottom: 6px;
+}
+
+.testimonial hr {
+  height: 1px;
+  width: 35%;
+  margin-left: 32%;
+  margin-bottom: 40px;
+  background-color: #BBA256;
+  border: none;
+}
+
+.testimonial .card img {
+  margin-top: 35px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 50%;
+}
+
+.testimonial .profile_info-image {
+  position: relative;
+}
+
+.testimonial .profile_info-image::before {
+  position: absolute;
+  top: 150px;
+  left: 246px;
+  content: "''";
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #BBA256;
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+}
+
+.testimonial .card h3{
+  margin-top: 10px;
+  font-size: 18px;
+  color: white;
+}
+
+.profile_info {
+  padding: 10px 10px 0px 10px;
+  height: 123px;
+  color: black;
+  font-family: Futura PT;
+  font-size: 18px;
+  position: relative;
+  background: #f1f1f1;
+}
+
+.profile_info:after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-top-color: #f1f1f1;
+  border-width: 20px;
+  margin-left: -7%;
+}
+
+.profile_info p {
+  text-align: left
+}
+
+.card {
+  position: relative;
+}
+
+.dir--btn {
+  position: absolute;
+  bottom: 8px;
+  left: 15px;
+}
+
+.testimonial .card .dir--btn__ {
+  width: 20px;
+  height: 20px;
+  background-color: #BBA256;
+  border: none;
+  -webkit-clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+  clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+  color: #fff;
+  cursor: pointer;
+}
+
+.testimonial .card .dir--btn__pre {
+  -webkit-clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+  clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+  margin-right: 320px;
+}
+
+.testimonial .card .dir--btn__next {
+  -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.testimonial .card .dir--btn__pre i {
+  transform: rotate(-90deg);
+}
+
+.testimonial .card .dir--btn__next i {
+  transform: rotate(90deg);
+}
+
+/************************ END-COL-RIGHT *************************/

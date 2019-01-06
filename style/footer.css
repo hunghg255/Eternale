@@ -1,0 +1,270 @@
+/*----------------------------------------------- FOOTER ---------------------------*/
+
+@font-face {
+    font-family: GreatVibes;
+    src: url('../Font/GreatVibes-Regular.otf');
+}
+
+@font-face {
+    font-family: FuturaPT;
+    src: url('../Font/FuturaPTLight_0.otf');
+}
+
+@font-face {
+    font-family: Basker;
+    src: url('../Font/BASKERVILLEOLDFACE.TTF');
+}
+
+.button__frame {
+    padding: 5px;
+    height: auto;
+    width: auto;
+    display: inline-block;
+    border: 1px solid #b9a155;
+    cursor: pointer;
+}
+
+
+.button__empty {
+    background: transparent;
+    display: inline-block;
+    /*margin: 5px;*/
+    padding: 11px 40px 12px 40px;
+    position: relative;
+    /*border: 1px solid #b9a155;*/
+    text-transform: uppercase;
+    color: #b9a155;
+    transition: all .3s ease;
+    
+}
+
+
+.button__frame:hover .button__empty {
+    color: #201d1a;
+    background: #b9a155;
+}
+
+.main--footer {
+    padding-top: 80px;
+    background: #222222;
+}
+
+.main--footer--content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 112px;
+    position: relative;
+}
+
+.main--footer--content--list, .main--footer--content--follow--about {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.main--footer--content--list li, .main--footer--content--follow--about li {
+    width: auto;
+    line-height: 24px;
+
+}
+.main--footer--content--about--info, .main--footer--content--follow--followus  {
+    margin-bottom: 16px;
+}
+
+.main--footer--content--signup--wrapper {
+    position: relative;
+    height: 100%;
+}
+
+a[class="main--footer--content--signupemail--link"] {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #b9a155;
+    text-decoration: underline;
+    font-family: Basker;
+}
+
+.main--footer--wrapper h2, .main--footer--wrapper h3 {
+    margin: 0;
+    margin-bottom: 16px;
+    color: #b9a155;
+    font-family: Basker;
+    text-transform: uppercase;
+}
+
+.main--footer--wrapper h2 {
+    font-size: 2rem;
+}
+
+.main--footer--content--about, .main--footer--content--signup, .main--footer--content--follow {
+    padding: 32px 0;
+}
+
+.main--footer--content--signupemail--label {
+    margin-bottom: 16px;
+}
+.main--footer--content--signupemail--input {
+    margin-bottom: 16px;
+    background: #201d1a;
+    color: #fff;
+    width: 100%;
+    border: none;
+    height: 30px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.main--footer--content--follow--followus li:first-child {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 32px;
+    font-family: FuturaPT;
+    font-weight: 600;
+}
+.main--footer--content--follow--followus li {
+    margin-right: 16px;
+    color: #b9a155;
+}
+
+.main--footer--content--follow--followus {
+    font-size: 24px;
+}
+
+.main--footer--wrapper {
+    background: #363636;
+    padding: 0 56px;
+    /*position: relative;*/
+}
+
+p[class='main--footer--copyright'] {
+    padding: 16px 56px;
+}
+
+.main--footer--copyright--custom {
+    color: #BAA256;
+    font-family: FuturaPT;
+}
+
+.main--footer--copyright--custom--space {
+    margin: 0 4px;
+}
+
+.main--footer--content--list a, .main--footer--content--follow--about a, label, .main--footer p { 
+    color: #fff;
+    font-family: FuturaPT;
+}
+
+.main--footer p {
+    line-height: 24px;
+}
+
+.main--footer--content--list li:first-child, .main--footer--content--list li:last-child {
+    text-transform: uppercase;
+}
+.main--footer--content--signupemail--input {
+    
+}
+
+.main--footer--content--list a:hover, .main--footer--content--follow--about a:hover {
+    color: #b9a155;
+}
+
+.main--footer--content--follow--wrapper {
+    /*position: relative;*/
+    height: 100%;
+}
+.main--footer--content--follow--totop {
+    display: inline-block;
+    padding: 16px;
+    color: #b9a155;
+    border-right: 1px solid #b9a155;
+    border-left: 1px solid #b9a155;
+    border-bottom: 1px solid #b9a155;
+    padding: 8px 12px 16px 12px;
+    position: relative;
+
+}
+.main--footer--content--follow--totop--wrapper {
+    position: absolute;
+    right: -10px;
+    bottom: 32px;
+}
+.main--footer--content--follow--totop::before {
+      content: '';
+    position: absolute;
+    border-right: 17px solid transparent;
+    border-left: 17px solid transparent;
+    border-bottom: 18px solid #b9a155;
+    left: -1px;
+    top: -18px;
+}
+
+.main--footer--content--follow--totop::after {
+    content: '';
+    position: absolute;
+    border-right: 16px solid transparent;
+    border-left: 16px solid transparent;
+    border-bottom: 18px solid #363636;
+    left: 0px;
+    top: -18px;
+}
+.main--footer--content--follow--award {
+    line-height: 0;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: url(../img/awards/TRIP2.png);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 16px;
+    margin-right: 16px;
+}
+
+.main--footer p {
+    margin: 0;
+}
+.main--footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.main--footer--content--list a, .main--footer--content--follow--about a {
+    text-decoration: none;
+}
+
+ul[class="main--footer--content--follow--followus"] {
+    display: flex;
+    margin-bottom: 16px;
+}
+.main--footer--content--follow--followus li {
+    /*display: inline-block;*/
+}
+
+.main--footer a {
+    transition: all .3s ease;
+}
+.main--footer label {
+    display: block;
+}
+.main--footer--content--follow--followus a {
+    color: #b9a155;
+}
+/*----------------------------------------------- End FOOTER --------------------------*/
+
+/*RESPONSIVE FOR FOOTER*/
+@media (max-width: 1367px) {
+   .main--footer--content {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 224px;
+   }
+   .main--footer--wrapper {
+    padding: 0 192px;
+   }
+   .main--footer--content--follow--totop--wrapper {
+    right: -146px;
+   }
+}
+/*END RESPONSIVE FOR FOOTER*/

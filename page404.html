@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eternale</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/page404.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+            <header>
+                    <nav class="menu-bar">
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <div class="home">
+                                    <a class="home-logo-link" href="#"><img src="img/event/header/logo.png" alt=""></a>
+                                    <div class="home-explore">
+                                        <div class="home-explore-close"><i id="btn-home-explore-close" class="fas fa-times"></i></div>
+                                        <div class="home-explore-title"><span>explore</span></div>
+                                        <div class="home-explore-lists">
+                                            <a href="about.html">About us</a>
+                                            <a href="Policies.html">Policies</a>
+                                            <a href="Testimonial.html">Testimonial</a>
+                                            <a href="location.html">Location</a>
+                                            <a href="Suggestion.html">Suggesttions</a>
+                                            <a href="tour_in_Hanoi2.html">Tours in Hanoi</a>
+                                            <a href="job.html">Job Opportunities</a>
+                                            <a href="Gallary.html">Gallary</a>
+                                            <a href="page404.html">eng</a>
+                                        </div>
+                                    </div>
+                                    <span class="home-slidebar-btn">
+                                        <div class="menu-3">
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <span>
+                                </div>
+                            </li>
+                                <li class="menu-item active" id="slide1"><a class="menu-item__link" href="home.html">home</a></li>
+                                <li class="menu-item" id="slide2"><a class="menu-item__link" href="room.html">rooms & suttes</a>
+                                <div class="menu-dropdown">
+                                    <div class="menu-dropdown-card">
+                                        <div class="menu-dropdown-card__mark">
+                                            <a class="menu-dropdown-card__link" href="page404.html">rooms</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-dropdown-card">
+                                        <div class="menu-dropdown-card__mark">
+                                            <a class="menu-dropdown-card__link" href="page404.html">suites</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-dropdown-card">
+                                        <div class="menu-dropdown-card__mark">
+                                            <a class="menu-dropdown-card__link" href="page404.html">apartments</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item" id="slide3"><a class="menu-item__link" href="dinning&pub.html">dining & pug</a></li>
+                            <li class="menu-item" id="slide4"><a class="menu-item__link" href="service.html">services</a>
+                                <div class="menu-dropdown">
+                                    <div class="menu-dropdown-card">
+                                        <div class="menu-dropdown-card__mark">
+                                            <a class="menu-dropdown-card__link" href="page404.html">pool</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-dropdown-card">
+                                        <div class="menu-dropdown-card__mark">
+                                            <a class="menu-dropdown-card__link" href="page404.html">gymnastic</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-dropdown-card">
+                                        <div class="menu-dropdown-card__mark">
+                                            <a class="menu-dropdown-card__link" href="page404.html">yoga</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-dropdown-card">
+                                        <div class="menu-dropdown-card__mark">
+                                            <a class="menu-dropdown-card__link" href="page404.html">massage</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item" id="slide5"><a class="menu-item__link" href="event.html">events</a> </li>
+                            <li class="menu-item" id="slide6"><a class="menu-item__link" href="contact.html">contact</a> </li>
+                            <li class="menu-item"><a class="menu-item__link" href="page404.html">book your stay</a></li>
+                        </ul>
+                    </nav>
+                </header>
+        <main>
+            <div class="notify-404">
+                <h1>404 Not Found</h1>
+            </div>
+            <div class="content-404">
+                <div class="content-title">
+                    <h2>oops! seems like something's wrong</h2>
+                </div>
+                <span>Back to Home to start explore our Hotel again</span>
+            </div>
+        </main>
+       
+    </div>
+
+    
+</body>
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+        let btnHomeExplore = document.querySelector('.home-slidebar-btn');
+        let homeExplore = document.querySelector('.home-explore');
+        let home = document.querySelector('.home');
+        let closeHomeExplore = document.querySelector('#btn-home-explore-close');
+        let openExplore = document.querySelector('#btn-open-explore');
+        btnHomeExplore.addEventListener('click', function () {
+            home.classList.toggle('active');
+
+            if (homeExplore.style.maxHeight) {
+                homeExplore.style.maxHeight = null;
+            } else {
+                homeExplore.style.maxHeight = homeExplore.scrollHeight + "px";
+            }
+        });
+
+        closeHomeExplore.addEventListener('click', function () {
+            home.classList.toggle('active');
+            
+            if (homeExplore.style.maxHeight) {
+                homeExplore.style.maxHeight = null;
+            } else {
+                homeExplore.style.maxHeight = homeExplore.scrollHeight + "px";
+            }
+        });
+    });
+</script>
+
+</html>

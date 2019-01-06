@@ -1,0 +1,17 @@
+
+@import "event.css";
+@font-face {
+    font-family: FuturaPT;
+    src: url('../Font/FuturaPTLight_0.otf');
+}
+
+@font-face {
+    font-family: Basker;
+    src: url('../Font/BASKERVILLEOLDFACE.TTF');
+}
+
+
+@font-face {
+    font-family: GreatVibes;
+    src: url('../Font/GreatVibes-Regular.otf');
+}

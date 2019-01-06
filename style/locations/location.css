@@ -1,0 +1,230 @@
+
+@import "banner.css";
+@import "col__right.css";
+
+
+
+/************* BANNER **************/
+*, body {
+  margin: 0;
+  padding: 0;
+  /* font-family: Basker; */
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: FuturaPT;
+  src: url('../Font/FuturaPTLight_0.otf');
+}
+
+@font-face {
+  font-family: Basker;
+  src: url('../Font/BASKERVILLEOLDFACE.TTF');
+}
+
+
+
+@font-face {
+  font-family: GreatVibes;
+  src: url(../Font/GreatVibes-Regular.otf);
+}
+
+/****************** CONTENT *******************/
+.content {
+  width: 100%;
+  height: auto;
+  background-color: #222222;
+  padding: 60px 60px 0px 60px;
+}
+
+.content-container {
+  display: flex;
+}
+
+/**********************COL-LEFT *********************/
+
+.content-container .col-left {
+  flex: 65%;
+  margin-right: 21px;
+}
+
+.place {
+  width: 100%;
+  height: 550px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 45px;
+}
+
+.place:hover .place--info{
+  box-shadow: 0 0 1px 1px #BBA256;
+}
+
+.place .place--img {
+  width: 100%;
+  height: 50%;
+}
+
+.place .place--img img {
+  width: 100%;
+  height: 100%;
+}
+
+.place .place--detail {
+  height: 50%;
+  display: flex;
+}
+
+.place--detail .button--share--group {
+  flex: 10%;
+}
+
+.place--detail .place--info {
+  flex: 85%;
+  background-color: #363636;
+  height: 120%;
+  margin-top: -55px;
+  padding: 35px 20px 0px 60px;
+  transition: 0.4s;
+}
+
+.button--share--group {
+  background-color: #222222;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.button--share--group p {
+  color: #BAA256;
+  margin-bottom: 15px;
+}
+
+.button--share--group li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.button--share--group a {
+  color: #BAA256;
+}
+
+p.date-released {
+  color: #BAA256;
+  margin-bottom: 10px;
+}
+
+.place--info p:nth-child(2) {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.place--info span {
+  border-bottom: 1.5px solid #BBA256;
+  padding-bottom: 7px;
+}
+
+.place--info p:nth-child(3) {
+  color: #fff;
+  font-size: 17px;
+  margin-bottom: 7%;
+}
+
+.place--info .readmore-btn {
+  padding: 5px 35px;
+  background-color:#baa25600;
+  border: 1px solid #000;
+  box-shadow: 0 0 0 2px #BAA256;
+  cursor: pointer;
+  transition: 0.4s;
+  color: #BAA256;
+}
+
+.place--info .readmore-btn:hover {
+  color: #000000d6;
+  background-color: #BAA256;
+  border: 1px solid #000;
+}
+
+
+.card {
+  position: relative;
+}
+
+.pagination {
+  text-align: right;
+  margin: 41px 0 64px;
+}
+
+.pagination .dir--btn__ {
+  width: 20px;
+  height: 20px;
+  background-color: #BBA256;
+  border: none;
+  -webkit-clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+  clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+  color: #fff;
+  cursor: pointer;
+}
+
+.pagination .dir--btn__pre {
+  -webkit-clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+  clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+.pagination .dir--btn__next {
+  -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.pagination .dir--btn__pre i {
+  transform: rotate(-90deg);
+}
+
+.pagination .dir--btn__next i {
+  transform: rotate(90deg);
+}
+
+.pagination__text {
+  display: inline;
+  color: #fff;
+  padding: 0 5px;
+}
+
+/************************ END-COL-LEFT *************************/
+
+
+@media (min-width: 768px) and (max-width: 820px) {
+  .place--info p:nth-child(2) {
+    font-size: 1.6rem;
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+.content-container {
+     flex-direction: column;
+  }
+
+  .content-container .col-left {
+    margin-right: 0px;
+  }
+
+  .profile_info {
+    font-size: 0.9em;
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .content-container {
+     flex-direction: column;
+  }
+
+  .content-container .col-left {
+    margin-right: 0px;
+  }
+
+  .profile_info {
+    font-size: 1.1em;
+  }
+}

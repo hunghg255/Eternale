@@ -1,0 +1,79 @@
+/**************** BANNER *******************/
+.banner {
+  background-image: url("../img/Location/vietnam1.png");
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -377px
+}
+
+.banner img {
+  width: 100%;
+  background-size: auto;
+  background-position-y: -150px;
+}
+
+.banner .overlay {
+  position: absolute;
+  content: '';
+  background-color: #000;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  top: 0;
+
+}
+
+.banner-text {
+  font-family: greatVibes;
+  font-size: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: 500;
+}
+
+.banner--navigator {
+  position: absolute;
+  content: '';
+  top: 90%;
+  right: 2%;
+  background-color: transparent;
+  color: #fff;
+  font-size: 14px;
+}
+
+.banner--navigator .home--link {
+ color: #fff;
+ text-decoration: none;
+}
+
+.banner--navigator .home--link:hover {
+  text-decoration: underline;
+}
+
+.banner--navigator .location--link {
+  color: #BBA256;
+  text-decoration: none;
+}
+
+
+.banner--navigator .location--link:hover {
+  text-decoration: underline;
+}
+
+
+.banner--navigator span {
+  color: #BAA256;
+}
+
+.banner--navigator i {
+  font-size: 10px;
+}
+
+
+/****************** END BANNER *******************/

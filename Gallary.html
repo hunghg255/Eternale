@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eternale</title>
+    <link rel="stylesheet" href="./style/gallery/lightgallery.css">
+    <link rel="stylesheet" href="style/gallery/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="./style/gallery/Gallary.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/header.css">
+</head>
+
+<body>
+    <div class="">
+            <header>
+                    <nav class="menu-bar">
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <div class="home">
+                                    <a class="home-logo-link" href="#"><img src="img/event/header/logo.png" alt=""></a>
+                                    <div class="home-explore">
+                                        <div class="home-explore-close"><i id="btn-home-explore-close" class="fas fa-times"></i></div>
+                                        <div class="home-explore-title"><span>explore</span></div>
+                                        <div class="home-explore-lists">
+                                            <a href="about.html">About us</a>
+                                            <a href="Policies.html">Policies</a>
+                                            <a href="Testimonial.html">Testimonial</a>
+                                            <a href="location.html">Location</a>
+                                            <a href="Suggestion.html">Suggesttions</a>
+                                            <a href="tour_in_Hanoi2.html">Tours in Hanoi</a>
+                                            <a href="job.html">Job Opportunities</a>
+                                            <a href="Gallary.html">Gallary</a>
+                                            <a href="page404.html">eng</a>
+                                        </div>
+                                    </div>
+                                    <span class="home-slidebar-btn">
+                                        <div class="menu-3">
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <span>
+                                </div>
+                            </li>
+                                <li class="menu-item active" id="slide1"><a class="menu-item__link" href="home.html">home</a></li>
+                                <li class="menu-item" id="slide2"><a class="menu-item__link" href="room.html">rooms & suttes</a>
+                                <div class="menu-dropdown">
+                                    <div class="menu-dropdown-card">
+                                        <div class="menu-dropdown-card__mark">
+                                            <a class="menu-dropdown-card__link" href="page404.html">rooms</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-dropdown-card">
+                                        <div class="menu-dropdown-card__mark">
+                                            <a class="menu-dropdown-card__link" href="page404.html">suites</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-dropdown-card">
+                                        <div class="menu-dropdown-card__mark">
+                                            <a class="menu-dropdown-card__link" href="page404.html">apartments</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item" id="slide3"><a class="menu-item__link" href="dinning&pub.html">dining & pug</a></li>
+                            <li class="menu-item" id="slide4"><a class="menu-item__link" href="service.html">services</a>
+                                <div class="menu-dropdown">
+                                    <div class="menu-dropdown-card">
+                                        <div class="menu-dropdown-card__mark">
+                                            <a class="menu-dropdown-card__link" href="page404.html">pool</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-dropdown-card">
+                                        <div class="menu-dropdown-card__mark">
+                                            <a class="menu-dropdown-card__link" href="page404.html">gymnastic</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-dropdown-card">
+                                        <div class="menu-dropdown-card__mark">
+                                            <a class="menu-dropdown-card__link" href="page404.html">yoga</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-dropdown-card">
+                                        <div class="menu-dropdown-card__mark">
+                                            <a class="menu-dropdown-card__link" href="page404.html">massage</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item" id="slide5"><a class="menu-item__link" href="event.html">events</a> </li>
+                            <li class="menu-item" id="slide6"><a class="menu-item__link" href="contact.html">contact</a> </li>
+                            <li class="menu-item"><a class="menu-item__link" href="page404.html">book your stay</a></li>
+                        </ul>
+                    </nav>
+                </header>
+        <main>
+            <div class="gl_BgPage" style="background-image: url('img/gallery/bannergallery.jpg');background-position-y: -350px;
+            background-size: cover;">
+                <div class="gl_slide">
+                 <h2>Gallary</h2>
+                </div>
+            </div>
+            <div class="gl_body">
+                <div class="gl_container">
+                    <div class="gl_tabMenu">
+                        <ul>
+                            <li><button class="gl_tab gl_active" onclick="changeAlbum(event, 'gl_images')"><span>IMAGES</span></button></li>
+                            <li><button class="gl_tab" onclick="changeAlbum(event, 'gl_Videos')"><span>VIDEOS</span></button></li>
+                            <li><button class="gl_tab" onclick="opchangeAlbumenCity(event, 'gl_All')"><span>ALL</span></button></li>
+                        </ul>
+                    </div>
+                    <!-- Tab Content -->
+                    <div id="gl_images" class="gl_tabContent">
+                            <div class="grid-container " id="lightgallery">
+                                            <a class="grid-item" href="./img/gallery/GallaryImages/3ccb6370906f04074af7e8c2664fba66">
+                                                <img src="./img/gallery/GallaryImages/3ccb6370906f04074af7e8c2664fba66" />
+                                            </a>
+                                            <a class="grid-item" href="./img/gallery/GallaryImages/5f7b3d1da2e9657ac002ff71db3ca9b6">
+                                                <img src="./img/gallery/GallaryImages/5f7b3d1da2e9657ac002ff71db3ca9b6" />
+                                            </a>
+                                            <a class="grid-item" href="./img/gallery/GallaryImages/1bdfc65e11d6f7a8f6060db43df7e811">
+                                                <img src="./img/gallery/GallaryImages/1bdfc65e11d6f7a8f6060db43df7e811" />
+                                            </a>
+                                            <a class="grid-item" href="./img/gallery/GallaryImages/8d5eebe63fe736448ae4ee3105133979">
+                                                <img src="./img/gallery/GallaryImages/8d5eebe63fe736448ae4ee3105133979" />
+                                            </a>
+                                            <a class="grid-item" href="./img/gallery/GallaryImages/bd5006cf3344c38b1abf6f3c134c02ed">
+                                                <img src="./img/gallery/GallaryImages/bd5006cf3344c38b1abf6f3c134c02ed" />
+                                            </a>
+                                            <a class="grid-item" href="./img/gallery/GallaryImages/4530217d78b0f665da54b8f5b913e2eb">
+                                                <img src="./img/gallery/GallaryImages/4530217d78b0f665da54b8f5b913e2eb" />
+                                            </a>
+                                            <a class="grid-item" href="./img/gallery/GallaryImages/9546afcacea40e28933fc71ceb8753d9">
+                                                <img src="./img/gallery/GallaryImages/9546afcacea40e28933fc71ceb8753d9" />
+                                            </a>
+                                            <a class="grid-item" href="./img/gallery/GallaryImages/ca4d266d6639c11fe1e10a67cd4711b0">
+                                                <img src="./img/gallery/GallaryImages/ca4d266d6639c11fe1e10a67cd4711b0" />
+                                            </a>
+                                            <a class="grid-item" href="./img/gallery/GallaryImages/ff428b7500f714ee729f531cfbb8fc29">
+                                                <img src="./img/gallery/GallaryImages/ff428b7500f714ee729f531cfbb8fc29" />
+                                            </a>
+                                    </div>
+                    </div>        
+                    <div id="gl_Videos" class="gl_tabContent"></div>
+                    <div id="gl_All" class="gl_tabContent"></div>
+
+                    <!-- / Tab Content -->
+
+                    <!-- page navigation -->
+                    <div class="gl_page navigation">
+                        <ul class="gl_wrapnav">
+                            <li><a href=""><</a></li>
+                            <li><a href="">1/7</a></li>
+                            <li><a href="">></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+           
+        </main>
+    </div>
+     <!----------------------------------------------- FOOTER ---------------------------->
+
+     <footer class="main--footer">
+        <div class="main--footer--wrapper">
+            <div class="main--footer--content">
+            <div class="main--footer--content--about">
+                <h2>Eternale Hotel</h2>
+                <div class="main--footer--content--about--info">
+                    <p>46 Hang Hanh, Old Quarter, Hanoi</p>
+                    <p>Phone: +84 123 456 987</p>
+                    <p>Mail: eternal-hotel@gmail.com</p>    
+                </div>
+                <ul class="main--footer--content--list">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Rooms & Suites</a></li>
+                    <li><a href="">Dining & Pub</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Events</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Book Your Stay</a></li>
+                </ul>
+            </div>
+            <div class="main--footer--content--signup">
+                <div class="main--footer--content--signup--wrapper">
+                    <h3>Sign Up For Latest News</h3>
+                    <label class="main--footer--content--signupemail--label" for="main--footer--content--signupemail">Email:</label>
+                    <input type="text" class="main--footer--content--signupemail--input" id="main--footer--content--signupemail" />
+                    <div class="button__frame">
+                        <div class="button__empty">Sign Up</div>
+                    </div>
+                    <a class="main--footer--content--signupemail--link" href="#">Eternale on the news</a>
+                </div>
+                
+            </div>
+            <div class="main--footer--content--follow">
+                <div class="main--footer--content--follow--wrapper">
+                    <div class="main--footer--content--follow--award">
+                        <!-- <img src="/img/TRIP1.png" alt=""> -->
+                    </div>
+                    <img src="img/awards/award2.png" style="height: 100px; width: 100px; margin-bottom: 16px;" alt=""/>
+                    <ul class="main--footer--content--follow--followus">
+                        <li>Follow Us</li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    </ul>
+                <ul class="main--footer--content--follow--about">
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Policies</a></li>
+                    <li><a href="">Testimonials</a></li>
+                    <li><a href="">Locations</a></li>
+                    <li><a href="">Suggestions</a></li>
+                    <li><a href="">Tours in Hanoi</a></li>
+                    <li><a href="">Job Opportunities</a></li>
+                </ul>
+                <div class="main--footer--content--follow--totop--wrapper">
+                    <div class="main--footer--content--follow--totop">
+                        <i class="fas fa-long-arrow-alt-up"></i>
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        </div>
+        <p class="main--footer--copyright">All rights reserved to www.eternale.com<span class="main--footer--copyright--custom main--footer--copyright--custom--space">|</span><span class="main--footer--copyright--custom">Designed by Eternale Team - Arena Multimedia</span></p>
+    </footer>
+    <!----------------------------------------------- End FOOTER --------------------------->
+   
+    <script src="js/gallery/jquery.min.js"></script>
+    <script src="style/gallery/lightgallery.min.js"></script>
+    <script src="js/gallery/jquery.mousewheel.min.js"></script>
+    <script src="js/gallery/lg-thumbnail.js"></script>
+    <script src="js/gallery/lg-fullscreen.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#lightgallery").lightGallery(); 
+            var x = document.getElementsByTagName('a');
+            var y = document.getElementById('gl_header');
+            for (let i = 0; i <= x.length ; i++ ) {
+                if(x[i].className === 'active'){
+                y.style.display = 'none';
+            }
+            } 
+           
+        });
+    </script>
+    
+    <script type="text/javascript">
+		function openContactForm() {
+			let element = document.querySelector('.main1--contact--center');
+			element.classList.toggle('main1--contact--center__open');
+		}
+
+		function submitForm() {
+			document.getElementById('bookform').submit();
+		}
+
+		document.addEventListener('DOMContentLoaded', function() {
+			let liTags = document.getElementsByTagName('li');
+
+			for (let index in liTags) {
+				if (parseInt(liTags[index].innerHTML) >= 1 && parseInt(liTags[index].innerHTML) <= 20 && liTags[index].parentElement.parentElement.classList.value.indexOf('main--book--center--content--calendar1') > -1) {
+					// liTags[index].style.color= '#9e9b99';
+					liTags[index].classList.add('main--book--center--content--calendar--days__unavailable');
+				}
+			}
+		});
+	</script>
+    <script re src="js/gallery/main.js"></script>
+    <script src="js/gallery/Gallary.js"></script>
+</body>
+
+</html>

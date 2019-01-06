@@ -1,0 +1,46 @@
+
+
+
+@font-face {
+    font-family: FuturaPT;
+    src: url('../Font/FuturaPTLight_0.otf');
+}
+
+@font-face {
+    font-family: Basker;
+    src: url('../Font/BASKERVILLEOLDFACE.TTF');
+}
+
+
+@font-face {
+    font-family: GreatVibes;
+    src: url('../Font/GreatVibes-Regular.otf');
+}
+/* @font-face {
+    font-family: light;
+    src: url(../Font/Freight\ Big\ Pro\ Light.otf);
+} */
+
+*, body {
+    margin: 0;
+    padding: 0;
+    /* font-family: baskerville-old-face; */
+}
+
+.wrapper {
+   width: 100%;
+    height: 100vh;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,172 +1,26 @@
-@import "header.css";
-@import "home1.css";
-@import "home2.css";
-@import "home3.css";
-@import "home4.css";
-@import "home5.css";
-@import "home6.css";
-@import "home7.css";
+@import "home.css";
+/*@import "about.css";*/
 
-
-@font-face {
-  font-family: FreightBigPro;
-  src: url('/Font/FreightBigProMedium.otf');
-}
-
-@font-face {
-  font-family: FuturaPT;
-  src: url('/Font/FuturaPTLight_0.otf');
-}
-
-@font-face {
-  font-family: Basker;
-  src: url('/Font/BASKVILL.ttf');
-}
-
-
-@font-face {
-  font-family: GreatVibes;
-  src: url('/Font/GreatVibes-Regular.otf');
-}
-@font-face {
-  font-family: Lato;
-  src: url('/Font/Lato-Regular.ttf');
-}
-
-html, body {
-    position: relative;
-    height: 100%;
-  }
-  body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color:#000;
+*, body {
     margin: 0;
     padding: 0;
-  }
-  main,
-.slide-content {
-  width: 100%;
-height: calc(100vh - 80px);
-  overflow-y: hidden;
-
+    font-family: sans-serif;
 }
 
-main{
-  position: relative;
-}
-  .wrapper {
-    position: relative;
-    height: 100%;
-  }
-  .swiper-container {
-    width: 100%;
-    height: 100%;
-  }
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-
-  .slide1, .slide2, .slide4{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    z-index: 0;
-  }
-  
-  .slide1::before, .slide2::before, .slide4::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-  
-  .slide1::before{
-    background: rgba(0, 0, 0, .6);
-  }
-  
-  .slide2::before, .slide4::before{
-      background: rgba(0, 0, 0, .8);
-  }
-  
-  .slide1 {
-    background-image: url("../img/home/bg1.jpg");
-  }
-  
-  .slide2 {
-    background-image: url("../img/home/bg2.png");
-  }
-  
-  .slide5 {
-    background: #222222;
-  }
-  
-  .slide7 {
-    background: url("../img/slide7/bkgd--section-1--4-607c73a138a09d4f979575f5b988d8057abe613ea4e9f9eb87ead3ea2a920d21.png") no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .slide-content {
-    width: 100%;
-    height: 100vh;
-  }
-  
-  .slide1 .slide-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-.swiper-pagination {
-   color: white;
-display: flex;
- }
-
-
-.pagination {
-  position: fixed;
-  bottom: 60px;
-  right: 60px;
-  z-index: 1000;
-  display: flex;
-}
-.swiper-button-next, .swiper-button-prev {
-  background-image: none !important;
-}
-.swiper-button-prev.arrow {
-  left: -32px;
+.wrapper {
+   width: 100%;
+   height: 100vh;  
 }
 
-.swiper-button-next.arrow {
-  right: -60px;
-}
 
-.swiper-pagination.swiper-pagination-fraction {
-  top: 15px;
-  left: -6px;
-  font-size: 1.3rem;
-}
-.pagination .arrow i {
-  color: #BAA256;
-  font-size: 2rem;
-}
+
+
+
+
+
+
+
+
+
+
+
